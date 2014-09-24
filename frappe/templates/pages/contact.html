@@ -1,15 +1,25 @@
 {% block title %}{{ heading or "Contact Us"}}{% endblock %}
 
 {% block content %}
+<!-- no-sidebar -->
 <div class="contact-content">
 	<div class="row">
 		<div class="col-md-8">
-			<p id="contact-alert" class="alert alert-warning" 
+			<div>              
+              <p><!--<strong>Corporate Office:</strong><br />-->
+                Dreams, C-47,Westend Village, <br />
+                Right Bhusari Colony, Kothrud, Pune - 411029, <br />
+                Maharashtra, India .</p>
+              <p><strong>Phone:</strong> (020) 6570 0800 / 2528 1316 </p>
+	      	<P><Strong>Mobile:</strong> +91-9405411563 </p>
+              <p><strong>Email:</strong> <a href="mailto:contact@indictranstech.com">contact@indictranstech.com</a></p>
+			<!--{{ introduction or "" }}<br>-->
+			<!--<p id="contact-alert" class="alert alert-warning"
 				style="display: none;">&nbsp;</p>
 			<div class="form-group">
 				<select name="subject" class="form-control">
 				{% if query_options -%}
-					{% for option in query_options -%}
+					{% for option in query_options.split("\n") -%}
 					<option value="{{ option }}">{{ option }}</option>
 					{%- endfor %}
 				{% else %}
@@ -18,7 +28,7 @@
 				</select>
 			</div>
 			<div class="form-group">
-				<input class="form-control" name="email" type="text" 
+				<input class="form-control" name="email" type="text"
 				placeholder="Your Email Address" />
 			</div>
 			<div class="form-group">
@@ -26,10 +36,11 @@
 			</div>
 			<div class="form-group">
 				<button class="btn btn-primary btn-send">Send</button>
-			</div>
+			</div>-->
+
 		</div>
-		{% if address_title %}
-		<div class="col-md-3 col-md-offset-1 alert alert-warning"
+		<!--{% if address_title %}-->
+		<!--<div class="col-md-3 col-md-offset-1 alert alert-warning"
 				itemscope itemtype="http://schema.org/PostalAddress">
 			<h4><i class="icon-map-marker"></i> {{ address_title }}</h4>
 			{% if address_line1 %}
@@ -50,12 +61,11 @@
 			{% if country %}
 				<span itemprop="addressCountry">{{ country }}</span><br>
 			{% endif %}
-		</div>
-		{% endif %}
+		</div>-->
+		<!--{% endif %}-->
 	</div>
-	{{ introduction or ""}}
 </div>
-<script>
+<!--<script>
 	{% include "templates/includes/contact.js" %}
-</script>
+</script>-->
 {% endblock %}

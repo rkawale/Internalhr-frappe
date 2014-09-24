@@ -3,7 +3,7 @@
  "allow_copy": 0, 
  "allow_import": 1, 
  "allow_rename": 1, 
- "creation": "2014-03-11 14:55:00.000000", 
+ "creation": "2014-03-11 14:55:00", 
  "description": "Represents a User in the system.", 
  "docstatus": 0, 
  "doctype": "DocType", 
@@ -420,7 +420,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 5, 
- "modified": "2014-03-11 16:04:13.000000", 
+ "modified": "2014-05-29 17:03:34.530949", 
  "modified_by": "Administrator", 
  "module": "Core", 
  "name": "User", 
@@ -437,6 +437,13 @@
    "report": 1, 
    "role": "System Manager", 
    "submit": 0, 
+   "write": 1
+  }, 
+  {
+   "permlevel": 0, 
+   "read": 1, 
+   "restricted": 1, 
+   "role": "Employee", 
    "write": 1
   }, 
   {
